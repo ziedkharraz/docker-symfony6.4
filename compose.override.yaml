@@ -22,3 +22,10 @@ services:
 
 ###> symfony/mercure-bundle ###
 ###< symfony/mercure-bundle ###
+
+###> doctrine/doctrine-bundle ###
+  database:
+    container_name: postgresql
+    ports:
+      - "5432"
+###< doctrine/doctrine-bundle ###

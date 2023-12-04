@@ -21,6 +21,9 @@ help: ## Outputs this help screen
 build: ## Builds the Docker images
 	@$(DOCKER_COMP) build --pull --no-cache
 
+build-cache: ## Builds the Docker images
+	@$(DOCKER_COMP) build --pull
+
 up: ## Start the docker hub in detached mode (no logs)
 	@$(DOCKER_COMP) up --detach
 
